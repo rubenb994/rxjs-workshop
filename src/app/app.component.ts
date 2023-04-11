@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,8 @@ export class AppComponent {
   currentAssignment = 1;
   private firstAssignment = 1;
 
+  constructor(private router: Router) {}
+
   get previousDisabled(): boolean {
     return this.firstAssignment >= this.currentAssignment;
   }
@@ -20,9 +23,11 @@ export class AppComponent {
 
   onClickPrevious(): void {
     this.currentAssignment--;
+    this.router.navigate([`assignment-${this.currentAssignment}`]);
   }
 
   onClickNext(): void {
     this.currentAssignment++;
+    this.router.navigate([`assignment-${this.currentAssignment}`]);
   }
 }
