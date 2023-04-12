@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AssignmentOneComponent } from './components/assignment-one/assignment-one.component';
-import { AssignmentTwoComponent } from './components/assignment-two/assignment-two.component';
-import { AssignmentThreeComponent } from './components/assignment-three/assignment-three.component';
-import { AssignmentFourComponent } from './components/assignment-four/assignment-four.component';
-import { AssignmentFiveComponent } from './components/assignment-five/assignment-five.component';
-import { AssignmentSixComponent } from './components/assignment-six/assignment-six.component';
-import { AssignmentSevenComponent } from './components/assignment-seven/assignment-seven.component';
-import { AssignmentEightComponent } from './components/assignment-eight/assignment-eight.component';
+import { AssignmentOneComponent } from './components/assignment-1/assignment-one.component';
+import { AssignmentTwoComponent } from './components/assignment-2/assignment-two.component';
+import { AssignmentThreeComponent } from './components/assignment-3/assignment-three.component';
+import { AssignmentFourComponent } from './components/assignment-4/assignment-four.component';
+import { AssignmentFiveComponent } from './components/assignment-5/assignment-five.component';
+import { AssignmentSixComponent } from './components/assignment-6/assignment-six.component';
+import { AssignmentSevenComponent } from './components/assignment-7/assignment-seven.component';
+import { AssignmentEightComponent } from './components/assignment-8/assignment-eight.component';
 
 const routes: Routes = [
   {
