@@ -22,8 +22,10 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    const pathAssignmentNumber = window.location.pathname.slice(-1);
-    this.currentAssignment = parseInt(pathAssignmentNumber) ?? 1;
+    setTimeout(() => {
+      const pathAssignmentNumber = window.location.pathname.slice(-1);
+      this.currentAssignment = parseInt(pathAssignmentNumber) ?? 1;
+    }, 1500);
   }
 
   onClickPrevious(): void {

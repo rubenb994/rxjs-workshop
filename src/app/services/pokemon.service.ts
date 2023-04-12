@@ -10,6 +10,9 @@ import { PokemonDetails } from '../models/pokemon-details';
 export class PokemonService {
   constructor(private httpClient: HttpClient) {}
 
+  /**
+   * Get all Pokemons successful request
+   */
   getAll(): Observable<Pokemon[]> {
     return this.httpClient
       .get<PokemonApiResult>('https://pokeapi.co/api/v2/pokemon/')
@@ -19,6 +22,9 @@ export class PokemonService {
       );
   }
 
+  /**
+   * Get all Pokemons failed request
+   */
   getAllWithError(): Observable<PokemonApiResult> {
     return this.httpClient
       .get<PokemonApiResult>('https://pokeapi.co/api/v2/pokemon/')
@@ -31,6 +37,9 @@ export class PokemonService {
       );
   }
 
+  /**
+   * Get all Pokemon by name successful request
+   */
   getByName(name: string): Observable<PokemonDetails> {
     return this.httpClient.get<PokemonDetails>(
       `https://pokeapi.co/api/v2/pokemon/${name}`
