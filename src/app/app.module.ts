@@ -12,6 +12,9 @@ import { AssignmentFiveComponent } from './components/assignment-5/assignment-fi
 import { AssignmentSixComponent } from './components/assignment-6/assignment-six.component';
 import { AssignmentSevenComponent } from './components/assignment-7/assignment-seven.component';
 import { AssignmentEightComponent } from './components/assignment-8/assignment-eight.component';
+import { AssignmentNineComponent } from './components/assignment-9/assignment-nine.component';
+import { AssignmentTenComponent } from './components/assignment-10/assignment-ten.component';
+import { AssignmentElevenComponent } from './components/assignment-11/assignment-eleven.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { AssignmentEightComponent } from './components/assignment-8/assignment-e
     AssignmentSixComponent,
     AssignmentSevenComponent,
     AssignmentEightComponent,
+    AssignmentNineComponent,
+    AssignmentTenComponent,
+    AssignmentElevenComponent,
   ],
   imports: [
     BrowserModule,
