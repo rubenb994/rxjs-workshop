@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AssignmentTwoComponent } from './components/assignment-two/assignment-two.component';
 import { AssignmentThreeComponent } from './components/assignment-three/assignment-three.component';
 import { AssignmentFourComponent } from './components/assignment-four/assignment-four.component';
+import { AssignmentFiveComponent } from './components/assignment-five/assignment-five.component';
+import { AssignmentSixComponent } from './components/assignment-six/assignment-six.component';
+import { AssignmentSevenComponent } from './components/assignment-seven/assignment-seven.component';
+import { AssignmentEightComponent } from './components/assignment-eight/assignment-eight.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { AssignmentFourComponent } from './components/assignment-four/assignment
     AssignmentTwoComponent,
     AssignmentThreeComponent,
     AssignmentFourComponent,
+    AssignmentFiveComponent,
+    AssignmentSixComponent,
+    AssignmentSevenComponent,
+    AssignmentEightComponent,
   ],
   imports: [
     BrowserModule,
