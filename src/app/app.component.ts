@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -22,10 +23,12 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      const pathAssignmentNumber = window.location.pathname.slice(-1);
-      this.currentAssignment = parseInt(pathAssignmentNumber) ?? 1;
-    }, 1500);
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        const pathAssignmentNumber = window.location.pathname.split('-');
+        this.currentAssignment = parseInt(pathAssignmentNumber[1]) ?? 1;
+      });
   }
 
   onClickPrevious(): void {
