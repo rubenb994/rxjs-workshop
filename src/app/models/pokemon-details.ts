@@ -19,18 +19,18 @@ export interface PokemonDetails {
   weight: number;
 }
 
-interface Type {
+export interface Type {
   slot: number;
   type: Ability;
 }
 
-interface Stat {
+export interface Stat {
   base_stat: number;
   effort: number;
   stat: Ability;
 }
 
-interface Sprites {
+export interface Sprites {
   back_default: string;
   back_female?: any;
   back_shiny: string;
@@ -43,7 +43,7 @@ interface Sprites {
   versions: Versions;
 }
 
-interface Versions {
+export interface Versions {
   'generation-i': Generationi;
   'generation-ii': Generationii;
   'generation-iii': Generationiii;
@@ -54,25 +54,25 @@ interface Versions {
   'generation-viii': Generationviii;
 }
 
-interface Generationviii {
+export interface Generationviii {
   icons: Dreamworld;
 }
 
-interface Generationvii {
+export interface Generationvii {
   icons: Dreamworld;
   'ultra-sun-ultra-moon': Home;
 }
 
-interface Generationvi {
+export interface Generationvi {
   'omegaruby-alphasapphire': Home;
   'x-y': Home;
 }
 
-interface Generationv {
+export interface Generationv {
   'black-white': Blackwhite;
 }
 
-interface Blackwhite {
+export interface Blackwhite {
   animated: Diamondpearl;
   back_default: string;
   back_female?: any;
@@ -84,13 +84,13 @@ interface Blackwhite {
   front_shiny_female?: any;
 }
 
-interface Generationiv {
+export interface Generationiv {
   'diamond-pearl': Diamondpearl;
   'heartgold-soulsilver': Diamondpearl;
   platinum: Diamondpearl;
 }
 
-interface Diamondpearl {
+export interface Diamondpearl {
   back_default: string;
   back_female?: any;
   back_shiny: string;
@@ -101,26 +101,26 @@ interface Diamondpearl {
   front_shiny_female?: any;
 }
 
-interface Generationiii {
+export interface Generationiii {
   emerald: Officialartwork;
   'firered-leafgreen': Fireredleafgreen;
   'ruby-sapphire': Fireredleafgreen;
 }
 
-interface Fireredleafgreen {
+export interface Fireredleafgreen {
   back_default: string;
   back_shiny: string;
   front_default: string;
   front_shiny: string;
 }
 
-interface Generationii {
+export interface Generationii {
   crystal: Crystal;
   gold: Gold;
   silver: Gold;
 }
 
-interface Gold {
+export interface Gold {
   back_default: string;
   back_shiny: string;
   front_default: string;
@@ -128,7 +128,7 @@ interface Gold {
   front_transparent: string;
 }
 
-interface Crystal {
+export interface Crystal {
   back_default: string;
   back_shiny: string;
   back_shiny_transparent: string;
@@ -139,12 +139,12 @@ interface Crystal {
   front_transparent: string;
 }
 
-interface Generationi {
+export interface Generationi {
   'red-blue': Redblue;
   yellow: Redblue;
 }
 
-interface Redblue {
+export interface Redblue {
   back_default: string;
   back_gray: string;
   back_transparent: string;
@@ -153,52 +153,52 @@ interface Redblue {
   front_transparent: string;
 }
 
-interface Other {
+export interface Other {
   dream_world: Dreamworld;
   home: Home;
   'official-artwork': Officialartwork;
 }
 
-interface Officialartwork {
+export interface Officialartwork {
   front_default: string;
   front_shiny: string;
 }
 
-interface Home {
+export interface Home {
   front_default: string;
   front_female?: any;
   front_shiny: string;
   front_shiny_female?: any;
 }
 
-interface Dreamworld {
+export interface Dreamworld {
   front_default: string;
   front_female?: any;
 }
 
-interface Move {
+export interface Move {
   move: Ability;
   version_group_details: Versiongroupdetail[];
 }
 
-interface Versiongroupdetail {
+export interface Versiongroupdetail {
   level_learned_at: number;
   move_learn_method: Ability;
   version_group: Ability;
 }
 
-interface Gameindex {
+export interface Gameindex {
   game_index: number;
   version: Ability;
 }
 
-interface Ability2 {
+export interface Ability2 {
   ability: Ability;
   is_hidden: boolean;
   slot: number;
 }
 
-interface Ability {
+export interface Ability {
   name: string;
   url: string;
 }
