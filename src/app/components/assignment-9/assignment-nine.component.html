@@ -2,15 +2,18 @@
   <h5 class="mb-3">Assignment #9</h5>
 
   Display a list of all Pokemons & add a search field with which I can filter
-  the list based on my input
+  the list based on the search input
+  <br />
   <br />
 
   Filter by Pokemon name<br />
   The filter mechanism should only trigger if:<br />
-  <span>The value was changed</span>
-  <span>The search input was not changed for at least 1 second</span>
+  <div class="ml-3">The value was changed</div>
+  <div class="ml-3">The search input was not changed for at least 1 second</div>
 </div>
 
 <hr />
 <p>Execute your assignment here</p>
-<div class="assignment-playground"></div>
+<div class="assignment-playground">
+  <input placeholder="Search..." matInput [formControl]="searchFormControl" />
+</div>

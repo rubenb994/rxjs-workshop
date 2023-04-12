@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  lastAssignment = 11;
+  lastAssignment = 10;
   currentAssignment = 1;
   private firstAssignment = 1;
 

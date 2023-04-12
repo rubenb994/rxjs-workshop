@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
   selector: 'app-assignment-ten',
   templateUrl: './assignment-ten.component.html',
-  styleUrls: ['./assignment-ten.component.scss']
+  styleUrls: ['./assignment-ten.component.scss'],
 })
 export class AssignmentTenComponent implements OnInit {
+  constructor(private pokemonService: PokemonService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
