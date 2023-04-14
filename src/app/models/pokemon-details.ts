@@ -19,18 +19,29 @@ export interface PokemonDetails {
   weight: number;
 }
 
-export interface Type {
+export interface Move {
+  move: Ability;
+  version_group_details: Versiongroupdetail[];
+}
+
+export interface Ability {
+  name: string;
+  url: string;
+}
+
+/**
+ * You should not need the interfaces below
+ */
+interface Type {
   slot: number;
   type: Ability;
 }
-
-export interface Stat {
+interface Stat {
   base_stat: number;
   effort: number;
   stat: Ability;
 }
-
-export interface Sprites {
+interface Sprites {
   back_default: string;
   back_female?: any;
   back_shiny: string;
@@ -43,7 +54,7 @@ export interface Sprites {
   versions: Versions;
 }
 
-export interface Versions {
+interface Versions {
   'generation-i': Generationi;
   'generation-ii': Generationii;
   'generation-iii': Generationiii;
@@ -54,25 +65,25 @@ export interface Versions {
   'generation-viii': Generationviii;
 }
 
-export interface Generationviii {
+interface Generationviii {
   icons: Dreamworld;
 }
 
-export interface Generationvii {
+interface Generationvii {
   icons: Dreamworld;
   'ultra-sun-ultra-moon': Home;
 }
 
-export interface Generationvi {
+interface Generationvi {
   'omegaruby-alphasapphire': Home;
   'x-y': Home;
 }
 
-export interface Generationv {
+interface Generationv {
   'black-white': Blackwhite;
 }
 
-export interface Blackwhite {
+interface Blackwhite {
   animated: Diamondpearl;
   back_default: string;
   back_female?: any;
@@ -84,13 +95,13 @@ export interface Blackwhite {
   front_shiny_female?: any;
 }
 
-export interface Generationiv {
+interface Generationiv {
   'diamond-pearl': Diamondpearl;
   'heartgold-soulsilver': Diamondpearl;
   platinum: Diamondpearl;
 }
 
-export interface Diamondpearl {
+interface Diamondpearl {
   back_default: string;
   back_female?: any;
   back_shiny: string;
@@ -101,26 +112,26 @@ export interface Diamondpearl {
   front_shiny_female?: any;
 }
 
-export interface Generationiii {
+interface Generationiii {
   emerald: Officialartwork;
   'firered-leafgreen': Fireredleafgreen;
   'ruby-sapphire': Fireredleafgreen;
 }
 
-export interface Fireredleafgreen {
+interface Fireredleafgreen {
   back_default: string;
   back_shiny: string;
   front_default: string;
   front_shiny: string;
 }
 
-export interface Generationii {
+interface Generationii {
   crystal: Crystal;
   gold: Gold;
   silver: Gold;
 }
 
-export interface Gold {
+interface Gold {
   back_default: string;
   back_shiny: string;
   front_default: string;
@@ -128,7 +139,7 @@ export interface Gold {
   front_transparent: string;
 }
 
-export interface Crystal {
+interface Crystal {
   back_default: string;
   back_shiny: string;
   back_shiny_transparent: string;
@@ -139,12 +150,12 @@ export interface Crystal {
   front_transparent: string;
 }
 
-export interface Generationi {
+interface Generationi {
   'red-blue': Redblue;
   yellow: Redblue;
 }
 
-export interface Redblue {
+interface Redblue {
   back_default: string;
   back_gray: string;
   back_transparent: string;
@@ -153,52 +164,42 @@ export interface Redblue {
   front_transparent: string;
 }
 
-export interface Other {
+interface Other {
   dream_world: Dreamworld;
   home: Home;
   'official-artwork': Officialartwork;
 }
 
-export interface Officialartwork {
+interface Officialartwork {
   front_default: string;
   front_shiny: string;
 }
 
-export interface Home {
+interface Home {
   front_default: string;
   front_female?: any;
   front_shiny: string;
   front_shiny_female?: any;
 }
 
-export interface Dreamworld {
+interface Dreamworld {
   front_default: string;
   front_female?: any;
 }
 
-export interface Move {
-  move: Ability;
-  version_group_details: Versiongroupdetail[];
-}
-
-export interface Versiongroupdetail {
+interface Versiongroupdetail {
   level_learned_at: number;
   move_learn_method: Ability;
   version_group: Ability;
 }
 
-export interface Gameindex {
+interface Gameindex {
   game_index: number;
   version: Ability;
 }
 
-export interface Ability2 {
+interface Ability2 {
   ability: Ability;
   is_hidden: boolean;
   slot: number;
-}
-
-export interface Ability {
-  name: string;
-  url: string;
 }

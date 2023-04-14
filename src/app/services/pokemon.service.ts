@@ -47,6 +47,10 @@ export class PokemonService {
     );
   }
 
+  /**
+   * Get the details of a specific move
+   * @param url The endpoint of the specific move to query.
+   */
   getMoveDetails(url: string): Observable<MoveDetails> {
     return this.httpClient.get<MoveDetails>(url);
   }

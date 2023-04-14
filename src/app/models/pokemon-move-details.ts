@@ -30,7 +30,10 @@ export interface Name {
   name: string;
 }
 
-export interface Meta {
+/**
+ * You should not need the interfaces below
+ */
+interface Meta {
   ailment: Contesttype;
   ailment_chance: number;
   category: Contesttype;
@@ -45,23 +48,23 @@ export interface Meta {
   stat_chance: number;
 }
 
-export interface Flavortextentry {
+interface Flavortextentry {
   flavor_text: string;
   language: Contesttype;
   version_group: Contesttype;
 }
 
-export interface Effectentry {
+interface Effectentry {
   effect: string;
   language: Contesttype;
   short_effect: string;
 }
 
-export interface Contesttype {
+interface Contesttype {
   name: string;
   url: string;
 }
 
-export interface Contesteffect {
+interface Contesteffect {
   url: string;
 }
