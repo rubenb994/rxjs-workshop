@@ -12,7 +12,7 @@ export class PokemonService {
   constructor(private httpClient: HttpClient) {}
 
   /**
-   * Get all Pokemons successful request
+   * Get all Pokemons as a successful request
    */
   getAll(): Observable<Pokemon[]> {
     return this.httpClient
@@ -24,7 +24,7 @@ export class PokemonService {
   }
 
   /**
-   * Get all Pokemons failed request
+   * Get all Pokemons as a failed request
    */
   getAllWithError(): Observable<PokemonApiResult> {
     return this.httpClient
